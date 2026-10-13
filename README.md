@@ -10,7 +10,7 @@ It stays on the administrative side. It never diagnoses, recommends treatment or
 |---|---|---|
 | 1. Appointment Management | Check, reschedule or cancel an appointment | Built |
 | 2. Insurance Eligibility and Coverage Status | Check whether insurance is active and verified | Built |
-| 3. Lab Report Status | Check report status | Not started |
+
 
 ## How it works
 
@@ -131,7 +131,5 @@ Still to do:
 
 Kore.ai XO 11 (Dialog Builder), mockAPI.io, JavaScript script nodes.
 
-## Author
 
-Your name here. Add a license of your choice.
 
