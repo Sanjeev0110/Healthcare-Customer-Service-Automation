@@ -39,8 +39,6 @@ API: `GET /appointments?appointmentId=<ID>`
 | RESCHEDULE_NOT_ALLOWED | Explains it cannot be rescheduled here; offers a representative |
 | NOT_FOUND | Asks the patient to verify the appointment ID |
 
-![Use Case 1 canvas](screenshots/uc1-dialog-canvas.png)
-![Use Case 1 confirmed test](screenshots/uc1-confirmed-test.png)
 
 ## Use Case 2: Insurance Eligibility
 
@@ -56,9 +54,6 @@ The script combines `eligibilityStatus` and `verificationStatus` into a single `
 | PAYER_MISMATCH | Explains the details do not match provider records; offers a transfer |
 | NOT_FOUND | Asks the patient to verify the member ID |
 
-![Use Case 2 canvas](screenshots/uc2-dialog-canvas.png)
-![ACTIVE_VERIFIED test](screenshots/uc2-active-verified-test.png)
-![PAYER_MISMATCH test](screenshots/uc2-payer-mismatch-test.png)
 
 ## Agent transfer
 
@@ -67,7 +62,6 @@ The bot transfers when a case cannot be handled automatically: rescheduling not 
 - Use Case 1 passes: appointmentId, status, date, time, provider, eligibility flags, transfer reason.
 - Use Case 2 passes: memberId, eligibilityStatus, payerName, planName, verificationStatus, transfer reason, and any issue the patient reported.
 
-![Transfer debug log](screenshots/uc2-agent-transfer-debug.png)
 
 **Trial limitation:** no live agent system was connected, so after the transfer starts the bot says it cannot complete the request. The proof is in the debug log and the passed context data.
 
